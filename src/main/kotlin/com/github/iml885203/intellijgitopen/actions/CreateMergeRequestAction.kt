@@ -50,7 +50,7 @@ class CreateMergeRequestAction : AnAction() {
         val panel = createPanel(searchField, list)
 
         val popup = JBPopupFactory.getInstance().createComponentPopupBuilder(panel, searchField)
-            .setTitle("Select a remote branch")
+            .setTitle("Select a Remote Branch")
             .setResizable(true)
             .setFocusable(true)
             .setRequestFocus(true)
