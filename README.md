@@ -21,7 +21,8 @@ Git Open is a plugin that helps you quickly open the remote repository of the cu
 
 The support includes:
 - Open Remote Repository
-- Open MergeRequests/PullRequests
+- Open Merge Requests/Pull Requests
+- Create Merge Request
 - Open Pipelines/Actions
 <!-- Plugin description end -->
 

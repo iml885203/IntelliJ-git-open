@@ -28,8 +28,11 @@
     </applicationListeners>
 
     <actions>
-        <action class="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" text="Open Remote Repository On Browser" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
-        <action class="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" id="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" text="Open MergeRequests/PullRequests On Browser" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
-        <action class="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" id="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" text="Open Pipelines/Actions On Browser" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
+        <group id="com.github.iml885203.intellijgitopen.actions.GitOpenGroup" text="Git Open" popup="true" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" >
+            <action class="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" text="Open Remote Repository" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
+            <action class="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" id="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" text="Open Merge Requests/Pull Requests" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
+            <action class="com.github.iml885203.intellijgitopen.actions.CreateMergeRequestAction" id="com.github.iml885203.intellijgitopen.actions.CreateMergeRequestAction" text="Create Merge Request" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
+            <action class="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" id="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" text="Open Pipelines/Actions" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" />
+        </group>
     </actions>
 </idea-plugin>
