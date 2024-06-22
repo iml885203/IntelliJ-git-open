@@ -17,6 +17,15 @@ object GitHelper {
         val config = git.repository.config
         val remoteConfig = RemoteConfig(config, "origin")
         val uris: List<URIish> = remoteConfig.urIs
-        return uris[0].toString().replace(".git", "")
+        val remoteUrl = uris[0].toString().replace(".git", "")
+        return convertSshToHttps(remoteUrl)
+    }
+
+    private fun convertSshToHttps(url: String): String {
+        return if (url.startsWith("git@")) {
+            url.replace(":", "/").replace("git@", "http://")
+        } else {
+            url
+        }
     }
 }

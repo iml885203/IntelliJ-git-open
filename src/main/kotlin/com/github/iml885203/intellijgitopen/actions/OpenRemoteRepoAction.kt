@@ -5,9 +5,9 @@ import com.github.iml885203.intellijgitopen.MyNotifier
 import com.intellij.ide.BrowserUtil
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import org.eclipse.jgit.errors.RepositoryNotFoundException
+import com.intellij.openapi.diagnostic.thisLogger
 
-class GitOpenRemoteRepoAction : AnAction() {
+class OpenRemoteRepoAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val projectPath = project.basePath ?: return
@@ -17,6 +17,7 @@ class GitOpenRemoteRepoAction : AnAction() {
         }
 
         val remoteUrl = GitHelper.getRemoteUrl(projectPath)
+        thisLogger().warn("Remote URL: $remoteUrl")
         BrowserUtil.browse(remoteUrl)
     }
 }

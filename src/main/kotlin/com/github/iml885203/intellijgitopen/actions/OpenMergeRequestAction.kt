@@ -5,14 +5,8 @@ import com.github.iml885203.intellijgitopen.MyNotifier
 import com.intellij.ide.BrowserUtil
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.diagnostic.thisLogger
-import org.eclipse.jgit.api.Git
-import org.eclipse.jgit.errors.RepositoryNotFoundException
-import org.eclipse.jgit.transport.RemoteConfig
-import org.eclipse.jgit.transport.URIish
-import java.io.File
 
-class GitOpenMergeRequestAction : AnAction() {
+class OpenMergeRequestAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val projectPath = project.basePath ?: return
