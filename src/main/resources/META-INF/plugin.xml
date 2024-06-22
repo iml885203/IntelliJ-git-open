@@ -19,8 +19,7 @@
     </applicationListeners>
 
     <actions>
-        <action class="com.github.iml885203.intellijgitopen.actions.GitOpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.GitOpenRemoteRepoAction" text="Git Open Remote Repo">
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt G"/>
-        </action>
+        <action class="com.github.iml885203.intellijgitopen.actions.GitOpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.GitOpenRemoteRepoAction" text="Git Open Remote Repo" />
+        <action class="com.github.iml885203.intellijgitopen.actions.GitOpenMergeRequestAction" id="com.github.iml885203.intellijgitopen.actions.GitOpenMergeRequestAction" text="Git Open Merge Request" />
     </actions>
 </idea-plugin>
