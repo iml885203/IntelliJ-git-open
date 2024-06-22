@@ -29,6 +29,7 @@
 
     <actions>
         <action class="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" text="Open Remote Repository On Browser" />
-        <action class="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestAction" id="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestAction" text="Open Merge Requests/Pull Requests On Browser" />
+        <action class="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" id="com.github.iml885203.intellijgitopen.actions.OpenMergeRequestsAction" text="Open MergeRequests/PullRequests On Browser" />
+        <action class="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" id="com.github.iml885203.intellijgitopen.actions.OpenPipelinesAction" text="Open Pipelines/Actions On Browser" />
     </actions>
 </idea-plugin>

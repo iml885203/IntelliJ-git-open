@@ -6,7 +6,7 @@ import com.intellij.ide.BrowserUtil
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 
-class OpenMergeRequestAction : AnAction() {
+class OpenMergeRequestsAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val projectPath = project.basePath ?: return
