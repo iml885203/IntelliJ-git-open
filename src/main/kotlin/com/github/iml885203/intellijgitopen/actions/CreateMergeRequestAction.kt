@@ -7,6 +7,7 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.ui.popup.JBPopup
 import com.intellij.openapi.ui.popup.JBPopupFactory
+import com.intellij.openapi.wm.WindowManager
 import com.intellij.ui.CollectionListModel
 import com.intellij.ui.DocumentAdapter
 import com.intellij.ui.SearchTextField
@@ -32,15 +33,24 @@ class CreateMergeRequestAction : AnAction() {
         val project = e.project ?: return
         val projectPath = project.basePath ?: return
         if (!GitHelper.isGitRepository(projectPath)) {
-            MyNotifier.notifyError(project, "The current project is not a Git repository.")
+            MyNotifier.notifyWarn(project, "The current project is not a Git repository.")
             return
         }
 
+
         val git = Git.open(File(projectPath))
-        val branches = git.branchList().setListMode(ListBranchCommand.ListMode.REMOTE).call()
-        val branchNames = branches.map { it.name.substring(it.name.lastIndexOf("/") + 1) }
         currentBranch = git.repository.branch
         remoteUrl = GitHelper.getRemoteUrl(projectPath)
+        if (remoteUrl!!.contains("github.com")) {
+            MyNotifier.notifyWarn(project, "This action is not supported for GitHub repositories.")
+            return
+        }
+
+        val branches = git.branchList().setListMode(ListBranchCommand.ListMode.REMOTE).call()
+        val branchNames = branches
+            .map { it.name.removePrefix("refs/remotes/origin/") }
+            .filter { it != "HEAD" && it != currentBranch }
+            .sortedWith(compareBy(::getBranchWeight, { it }))
 
         val list = JBList(CollectionListModel(branchNames))
         list.selectionMode = ListSelectionModel.SINGLE_SELECTION
@@ -58,7 +68,23 @@ class CreateMergeRequestAction : AnAction() {
 
         addEnterKeyListener(searchField, list, popup)
 
-        popup.showInFocusCenter()
+        val window = WindowManager.getInstance().getFrame(project)
+
+        if (window != null) {
+            popup.showInCenterOf(window.rootPane)
+        } else {
+            popup.showInBestPositionFor(e.dataContext)
+        }
+    }
+
+    private fun getBranchWeight(branch: String): Int {
+        return when {
+            branch == "master" -> 1
+            branch == "release" -> 2
+            branch == "develop" -> 3
+            branch.startsWith("feature/") -> 4
+            else -> 5
+        }
     }
 
     private fun createSearchField(list: JBList<String>, branchNames: List<String>): SearchTextField {
@@ -104,12 +130,14 @@ class CreateMergeRequestAction : AnAction() {
                         val selectedIndex = list.selectedIndex
                         if (selectedIndex > 0) {
                             list.selectedIndex = selectedIndex - 1
+                            list.ensureIndexIsVisible(list.selectedIndex)
                         }
                     }
                     KeyEvent.VK_DOWN -> {
                         val selectedIndex = list.selectedIndex
                         if (selectedIndex < list.model.size - 1) {
                             list.selectedIndex = selectedIndex + 1
+                            list.ensureIndexIsVisible(list.selectedIndex)
                         }
                     }
                 }

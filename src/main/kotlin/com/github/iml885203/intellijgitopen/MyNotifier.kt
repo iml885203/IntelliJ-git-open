@@ -5,10 +5,10 @@ import com.intellij.notification.NotificationType
 import com.intellij.openapi.project.Project
 
 object MyNotifier {
-    fun notifyError(project: Project, content: String) {
+    fun notifyWarn(project: Project, content: String) {
         NotificationGroupManager.getInstance()
             .getNotificationGroup("Git Open")
-            .createNotification(content, NotificationType.ERROR)
+            .createNotification(content, NotificationType.WARNING)
             .notify(project)
     }
 }

@@ -11,7 +11,7 @@ class OpenMergeRequestsAction : AnAction() {
         val project = e.project ?: return
         val projectPath = project.basePath ?: return
         if (!GitHelper.isGitRepository(projectPath)) {
-            MyNotifier.notifyError(project, "The current project is not a Git repository.")
+            MyNotifier.notifyWarn(project, "The current project is not a Git repository.")
             return
         }
 
