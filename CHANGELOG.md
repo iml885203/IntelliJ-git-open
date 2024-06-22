@@ -2,7 +2,9 @@
 
 # IntelliJ-git-open Changelog
 
-## 2024.6.3
+## [Unreleased]
+
+## [2024.6.3]
 ### Added
 - Support ssh protocol for git remote url
 - Support Open Pipelines/Actions On Browser
