@@ -8,15 +8,6 @@
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <description><![CDATA[
-        Git Open is a plugin that helps you quickly open the remote repository of the current project.
-        The support includes:
-        <ul>
-          <li>Open remote repository</li>
-          <li>Open merge request</li>
-        </ul>
-    ]]></description>
-
     <extensions defaultExtensionNs="com.intellij">
         <notificationGroup id="Git Open"
                            displayType="BALLOON"
