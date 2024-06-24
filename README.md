@@ -1,8 +1,8 @@
 # IntelliJ-git-open
 
 ![Build](https://github.com/iml885203/IntelliJ-git-open/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/24695-git-open.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/24695-git-open.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/24695-git-open.svg)](https://plugins.jetbrains.com/plugin/24695-git-open)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/24695-git-open.svg)](https://plugins.jetbrains.com/plugin/24695-git-open)
 
 ## Description
 <!-- Plugin description -->
