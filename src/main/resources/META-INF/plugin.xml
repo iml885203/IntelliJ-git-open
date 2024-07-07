@@ -14,10 +14,6 @@
                            key="notification.group.name"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.iml885203.intellijgitopen.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
-
     <actions>
         <group id="com.github.iml885203.intellijgitopen.actions.GitOpenGroup" text="Git Open" popup="true" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService" >
             <action class="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" id="com.github.iml885203.intellijgitopen.actions.OpenRemoteRepoAction" text="Open Remote Repository" icon="com.intellij.icons.ExpUiIcons.Javaee.WebService">
