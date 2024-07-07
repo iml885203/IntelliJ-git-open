@@ -4,7 +4,7 @@
 
 ## [Unreleased]
 
-## [2026.7.1]
+## [2024.7.1]
 - Add keymap for all actions
 
 ## [2024.6.5]
