@@ -4,6 +4,9 @@
 
 ## [Unreleased]
 
+## [2026.7.1]
+- Add keymap for all actions
+
 ## [2024.6.5]
 - Fix Create Merge Request popup will switch to first project
 - Fix Create Merge Request popup sorting
