@@ -1,7 +1,7 @@
 [versions]
 # libraries
 exampleLibrary = "24.1.0"
-jgit = "6.10.0.202406032230-r"
+jgit = "7.0.0.202409031743-r"
 
 # plugins
 kotlin = "2.0.20"
