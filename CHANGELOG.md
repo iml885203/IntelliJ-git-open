@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+- support 2024.4.3
+
 ## [2024.7.1]
 - Add keymap for all actions
 
