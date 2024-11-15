@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+- Fix icon not show in JetBrain 2024.4.3
+
 ## [2024.11.1] - 2024-11-15
 
 - support 2024.4.3
