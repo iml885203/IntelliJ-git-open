@@ -4,7 +4,7 @@ exampleLibrary = "24.1.0"
 jgit = "6.10.0.202406032230-r"
 
 # plugins
-kotlin = "2.0.20"
+kotlin = "2.1.0"
 changelog = "2.2.0"
 gradleIntelliJPlugin = "1.17.4"
 qodana = "2024.1.5"
