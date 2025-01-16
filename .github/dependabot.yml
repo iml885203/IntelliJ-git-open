@@ -13,3 +13,28 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    versioning-strategy: increase
+    target-branch: main
+    open-pull-requests-limit: 10
+    rebase-strategy: auto
+    ignore:
+      - dependency-name: "actions/checkout"
+        versions: ["v4"]
+      - dependency-name: "gradle/actions/wrapper-validation"
+        versions: ["v4"]
+      - dependency-name: "actions/setup-java"
+        versions: ["v4"]
+      - dependency-name: "gradle/actions/setup-gradle"
+        versions: ["v4"]
+      - dependency-name: "actions/upload-artifact"
+        versions: ["v4"]
+      - dependency-name: "codecov/codecov-action"
+        versions: ["v4"]
+      - dependency-name: "JetBrains/qodana-action"
+        versions: ["v2024.1.9"]
+      - dependency-name: "actions/cache"
+        versions: ["v4"]
+      - dependency-name: "jlumbroso/free-disk-space"
+        versions: ["main"]
+      - dependency-name: "jtalk/url-health-check-action"
+        versions: ["v4"]
