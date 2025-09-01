@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2025.1.1] - 2025-01-16
+
 - Support for 2025.1
 
 ## [2024.11.2] - 2024-11-15
@@ -41,7 +43,8 @@
 
 - Support open remote repo
 
-[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.2...HEAD
+[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.1.1...HEAD
+[2025.1.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.2...v2025.1.1
 [2024.11.2]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.1...v2024.11.2
 [2024.11.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.7.1...v2024.11.1
 [2024.7.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.6.5...v2024.7.1
