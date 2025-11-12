@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+- Support for 2025.3
+
 ## [2025.9.1] - 2025-09-01
 
 - Support for 2025.2
