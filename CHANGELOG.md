@@ -5,6 +5,9 @@
 ## [Unreleased]
 
 - Support for 2025.3
+- Migrate to IntelliJ Platform Gradle Plugin 2.x
+- Update Gradle from 8.8 to 8.13
+- Fix plugin name to comply with JetBrains naming guidelines
 
 ## [2025.9.1] - 2025-09-01
 
