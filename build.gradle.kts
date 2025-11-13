@@ -1,9 +1,10 @@
+import org.gradle.api.provider.Provider
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
-fun properties(key: String) = providers.gradleProperty(key)
-fun environment(key: String) = providers.environmentVariable(key)
+fun properties(key: String): Provider<String> = providers.gradleProperty(key)
+fun environment(key: String): Provider<String> = providers.environmentVariable(key)
 
 plugins {
     id("java") // Java support
