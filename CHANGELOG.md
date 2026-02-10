@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+- Restore plugin name to Title Case ("Git Open") per JetBrains naming guidelines
+
 ## [2025.11.1] - 2025-11-13
 
 - Support for 2025.3
