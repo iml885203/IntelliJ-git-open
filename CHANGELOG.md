@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2025.11.1] - 2025-11-13
+
 - Support for 2025.3
 - Migrate to IntelliJ Platform Gradle Plugin 2.x
 - Update Gradle from 8.8 to 8.13
@@ -52,7 +54,8 @@
 
 - Support open remote repo
 
-[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.9.1...HEAD
+[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.11.1...HEAD
+[2025.11.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.9.1...v2025.11.1
 [2025.9.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.1.1...v2025.9.1
 [2025.1.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.2...v2025.1.1
 [2024.11.2]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.1...v2024.11.2
