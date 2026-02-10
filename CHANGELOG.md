@@ -7,7 +7,7 @@
 - Support for 2025.3
 - Migrate to IntelliJ Platform Gradle Plugin 2.x
 - Update Gradle from 8.8 to 8.13
-- Fix plugin name to comply with JetBrains naming guidelines
+- Restore plugin name to Title Case ("Git Open") per JetBrains naming guidelines
 
 ## [2025.9.1] - 2025-09-01
 
