@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [2026.2.1] - 2026-02-10
+
 - Restore plugin name to Title Case ("Git Open") per JetBrains naming guidelines
 
 ## [2025.11.1] - 2025-11-13
@@ -56,7 +58,8 @@
 
 - Support open remote repo
 
-[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.11.1...HEAD
+[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2026.2.1...HEAD
+[2026.2.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.11.1...v2026.2.1
 [2025.11.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.9.1...v2025.11.1
 [2025.9.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.1.1...v2025.9.1
 [2025.1.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2024.11.2...v2025.1.1
