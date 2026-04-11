@@ -62,7 +62,8 @@
 
 - Support open remote repo
 
-[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2026.2.1...HEAD
+[Unreleased]: https://github.com/iml885203/IntelliJ-git-open/compare/v2026.4.0...HEAD
+[2026.4.0]: https://github.com/iml885203/IntelliJ-git-open/compare/v2026.2.1...v2026.4.0
 [2026.2.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.11.1...v2026.2.1
 [2025.11.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.9.1...v2025.11.1
 [2025.9.1]: https://github.com/iml885203/IntelliJ-git-open/compare/v2025.1.1...v2025.9.1
