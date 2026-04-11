@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [2026.4.0] - 2026-04-11
+
+- Remove untilBuild version cap to support all future IDE versions
+
 ## [2026.2.1] - 2026-02-10
 
 - Restore plugin name to Title Case ("Git Open") per JetBrains naming guidelines
